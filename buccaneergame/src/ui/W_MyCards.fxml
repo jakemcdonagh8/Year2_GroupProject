@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="backround" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="610.0" style="-fx-background-color: #fffae6;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.game.W_MyCards">
+   <children>
+      <Label id="mainheader" alignment="CENTER" layoutX="97.0" layoutY="14.0" prefHeight="54.0" prefWidth="417.0" stylesheets="@styles.css" text="My Cards">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button id="button" fx:id="menuBtn" layoutX="216.0" layoutY="554.0" mnemonicParsing="false" onAction="#confirm" prefHeight="46.0" prefWidth="222.0" stylesheets="@styles.css" text="Return to Game">
+         <font>
+            <Font size="22.0" />
+         </font></Button>
+      <Pane id="backround1" layoutX="20.0" layoutY="70.0" prefHeight="477.0" prefWidth="573.0" style="-fx-border-color: black;" styleClass="border" stylesheets="@styles.css">
+         <children>
+            <Label id="header2" layoutX="19.0" layoutY="56.0" prefHeight="23.0" prefWidth="66.0" stylesheets="@styles.css" text="Score:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label id="backround1" fx:id="playerId" alignment="CENTER" layoutX="70.0" layoutY="6.0" prefHeight="35.0" prefWidth="495.0" stylesheets="@styles.css" text="playerId">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label id="header2" layoutX="16.0" layoutY="257.0" stylesheets="@styles.css" text="Treasure on ship : ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="176.0">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+            <Label id="header2" layoutX="13.0" layoutY="303.0" prefWidth="365.0" stylesheets="@styles.css" text="Crew cards/chance cards: ">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <VBox layoutX="97.0" layoutY="51.0" prefHeight="18.0" prefWidth="140.0">
+               <children>
+                  <Label id="cardtext" fx:id="currentScoreId" prefHeight="30.0" prefWidth="203.0" stylesheets="@styles.css" text="currentScoreId">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+            <Label id="treasure" fx:id="pRmId" layoutX="230.0" layoutY="168.0" stylesheets="@styles.css" text="pRmId">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pPId" layoutX="380.0" layoutY="191.0" stylesheets="@styles.css" text="pPId">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pGId" layoutX="90.0" layoutY="191.0" stylesheets="@styles.css" text="pGId">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pRId" layoutX="380.0" layoutY="132.0" stylesheets="@styles.css" text="pRId">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pDId" layoutX="88.0" layoutY="132.0" prefHeight="28.0" prefWidth="54.0" stylesheets="@styles.css" text="pDId">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ScrollPane id="backround" fx:id="hand" layoutX="9.0" layoutY="336.0" prefHeight="128.0" prefWidth="549.0" stylesheets="@styles.css" vbarPolicy="NEVER">
+               <content>
+                  <HBox id="backround1" fx:id="cardsInHand" prefHeight="125.0" prefWidth="546.0" spacing="10.0" style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" stylesheets="@styles.css" />
+               </content></ScrollPane>
+            <Label id="header2" fx:id="portId" layoutX="19.0" layoutY="86.0" stylesheets="@styles.css" text="portId">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="61.0" fitWidth="60.0" layoutX="35.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Diamond.png" />
+               </image></ImageView>
+            <ImageView fitHeight="48.0" fitWidth="66.0" layoutX="21.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/GoldBar.png" />
+               </image></ImageView>
+            <ImageView fitHeight="88.0" fitWidth="71.0" layoutX="169.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Rum.png" />
+               </image></ImageView>
+            <ImageView fitHeight="47.0" fitWidth="40.0" layoutX="323.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Ruby.png" />
+               </image></ImageView>
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="321.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Pearl.png" />
+               </image></ImageView>
+            <HBox layoutX="195.0" layoutY="297.0" prefHeight="100.0" prefWidth="417.0" />
+            <ImageView fitHeight="40.0" fitWidth="57.0" layoutX="171.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Diamond.png" />
+               </image>
+            </ImageView>
+            <Label id="cardtext" fx:id="pDS" layoutX="213.0" layoutY="246.0" prefHeight="39.0" prefWidth="40.0" stylesheets="@styles.css" text="888">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="33.0" fitWidth="42.0" layoutX="250.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/GoldBar.png" />
+               </image>
+            </ImageView>
+            <Label id="cardtext" fx:id="pGS" layoutX="297.0" layoutY="246.0" prefHeight="39.0" prefWidth="40.0" stylesheets="@styles.css" text="888">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="43.0" layoutX="334.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Ruby.png" />
+               </image>
+            </ImageView>
+            <Label id="cardtext" fx:id="pRS" layoutX="372.0" layoutY="245.0" prefHeight="39.0" prefWidth="40.0" stylesheets="@styles.css" text="888">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="38.0" layoutX="410.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Pearl.png" />
+               </image>
+            </ImageView>
+            <Label id="cardtext" fx:id="pPS" layoutX="456.0" layoutY="246.0" prefHeight="39.0" prefWidth="40.0" stylesheets="@styles.css" text="888">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="43.0" layoutX="488.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Rum.png" />
+               </image>
+            </ImageView>
+            <Label id="cardtext" fx:id="pRmS" layoutX="528.0" layoutY="247.0" prefHeight="39.0" prefWidth="40.0" stylesheets="@styles.css" text="888">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </Label>
+            <ImageView fx:id="playerIcon" fitHeight="43.0" fitWidth="104.0" layoutX="205.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/PlayerIcon_Blue.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</AnchorPane>

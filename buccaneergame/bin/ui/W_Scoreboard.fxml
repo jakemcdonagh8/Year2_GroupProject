@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="backround" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="900.0" style="-fx-background-color: #fffae6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.game.W_Scoreboard">
+   <children>
+      <Pane id="backround1" layoutX="7.0" layoutY="66.0" prefHeight="249.0" prefWidth="218.0" style="-fx-border-color: black;" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="17.0">
+         <children>
+            <Label id="cardtext" layoutX="-3.0" layoutY="62.0" prefHeight="17.0" prefWidth="78.0" text="Score:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="header2" fx:id="playerOne" layoutX="48.0" layoutY="13.0" prefHeight="26.0" prefWidth="122.0" text="playerOne">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label id="cardtext" layoutX="-6.0" layoutY="113.0" prefHeight="38.0" prefWidth="188.0" text="Treasure in port">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="cardtext" fx:id="portOne" layoutX="-5.0" layoutY="85.0" prefHeight="28.0" prefWidth="240.0" text="portOne">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="treasure" fx:id="pOneD" layoutX="40.0" layoutY="157.0" text="pOneD">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="176.0">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pOneR" layoutX="110.0" layoutY="157.0" text="pOneR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pOneG" layoutX="40.0" layoutY="185.0" text="pOneG">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pOneP" layoutX="114.0" layoutY="186.0" text="pOneP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <VBox layoutX="101.0" layoutY="363.0" prefHeight="17.0" prefWidth="30.0" />
+            <Label id="cardtext" fx:id="currentScoreOne" layoutX="54.0" layoutY="57.0" prefHeight="28.0" prefWidth="147.0" text="currentScoreOne">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label id="treasure" fx:id="pOneRm" layoutX="73.0" layoutY="210.0" prefHeight="23.0" prefWidth="86.0" text="pOneRm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Diamond.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="90.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Ruby.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="20.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/GoldBar.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="89.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Pearl.png" />
+               </image></ImageView>
+            <ImageView fitHeight="23.0" fitWidth="49.0" layoutX="51.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/ui/img/Rum.png" />
+               </image></ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="7.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/PlayerIcon_Red.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="225.0" layoutY="66.0" prefHeight="249.0" prefWidth="218.0" style="-fx-border-color: black;">
+         <children>
+            <Label id="cardtext" layoutX="-4.0" layoutY="57.0" prefHeight="28.0" prefWidth="69.0" text="Score:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="header2" fx:id="playerTwo" layoutX="50.0" layoutY="14.0" prefHeight="30.0" prefWidth="145.0" text="playerTwo">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label id="cardtext" fx:id="currentScoreTwo" layoutX="57.0" layoutY="58.0" prefHeight="27.0" prefWidth="147.0" text="currentScoreTwo">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label id="cardtext" fx:id="portTwo" layoutX="-3.0" layoutY="80.0" prefHeight="37.0" prefWidth="212.0" text="portTwo">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="cardtext" layoutX="-4.0" layoutY="116.0" prefHeight="28.0" prefWidth="188.0" text="Treasure in port">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="treasure" fx:id="pTwoD" layoutX="40.0" layoutY="157.0" prefHeight="20.0" prefWidth="63.0" text="pTwoD">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pTwoR" layoutX="110.0" layoutY="157.0" text="pTwoR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pTwoG" layoutX="40.0" layoutY="185.0" text="pTwoG" />
+            <Label id="treasure" fx:id="pTwoP" layoutX="110.0" layoutY="186.0" text="pTwoP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pTwoRm" layoutX="73.0" layoutY="210.0" text="pTwoRm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="90.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Ruby.png" />
+               </image></ImageView>
+            <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="5.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="89.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/ui/img/Pearl.png" />
+               </image></ImageView>
+            <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="75.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Diamond.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="20.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/GoldBar.png" />
+               </image></ImageView>
+            <ImageView fitHeight="23.0" fitWidth="49.0" layoutX="51.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/ui/img/Rum.png" />
+               </image></ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="7.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/PlayerIcon_Blue.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="443.0" layoutY="66.0" prefHeight="249.0" prefWidth="224.0" style="-fx-border-color: black;">
+         <children>
+            <Label id="cardtext" layoutX="-5.0" layoutY="56.0" prefHeight="28.0" prefWidth="70.0" text="Score:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="header2" fx:id="playerThree" layoutX="51.0" layoutY="14.0" prefHeight="28.0" prefWidth="147.0" text="playerThree">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Label id="cardtext" fx:id="currentScoreThree" layoutX="58.0" layoutY="57.0" prefHeight="27.0" prefWidth="163.0" text="currentScoreThree">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label id="cardtext" fx:id="portThree" layoutX="-4.0" layoutY="80.0" prefHeight="37.0" prefWidth="240.0" text="portThree">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="cardtext" layoutX="-5.0" layoutY="119.0" prefHeight="28.0" prefWidth="182.0" text="Treasure in port">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="treasure" fx:id="pThreeD" layoutX="33.0" layoutY="157.0" prefHeight="20.0" prefWidth="77.0" text="pThreeD">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pThreeR" layoutX="110.0" layoutY="157.0" text="pThreeR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pThreeG" layoutX="34.0" layoutY="185.0" text="pThreeG">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pThreeP" layoutX="111.0" layoutY="186.0" text="pThreeP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pThreeRm" layoutX="73.0" layoutY="210.0" text="pThreeRm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="12.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Diamond.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="16.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/GoldBar.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="90.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Ruby.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="93.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/ui/img/Pearl.png" />
+               </image></ImageView>
+            <ImageView fitHeight="23.0" fitWidth="49.0" layoutX="51.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Rum.png" />
+               </image></ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="7.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/PlayerIcon_Yellow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="665.0" layoutY="66.0" prefHeight="249.0" prefWidth="218.0" style="-fx-border-color: black;">
+         <children>
+            <Label id="cardtext" layoutX="-5.0" layoutY="56.0" prefHeight="28.0" prefWidth="79.0" text="Score:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="header2" fx:id="playerFour" layoutX="54.0" layoutY="14.0" prefHeight="30.0" prefWidth="137.0" text="playerFour">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label id="cardtext" fx:id="currentScoreFour" layoutX="62.0" layoutY="59.0" prefHeight="23.0" prefWidth="153.0" text="currentScoreFour">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label id="cardtext" fx:id="portFour" layoutX="-4.0" layoutY="82.0" prefHeight="38.0" prefWidth="218.0" text="portFour">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label id="cardtext" layoutX="-5.0" layoutY="125.0" text="Treasure in port">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <ImageView fitHeight="29.0" fitWidth="34.0" layoutX="95.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+            <Label id="treasure" fx:id="pFourD" layoutX="40.0" layoutY="157.0" prefHeight="18.0" prefWidth="49.0" text="pFourD">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pFourR" layoutX="110.0" layoutY="157.0" text="pFourR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pFourG" layoutX="40.0" layoutY="185.0" text="pFourG">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pFourP" layoutX="110.0" layoutY="186.0" text="pFourP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="treasure" fx:id="pFourRm" layoutX="73.0" layoutY="210.0" text="pFourRm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/ui/img/Diamond.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="20.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/ui/img/GoldBar.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="90.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Ruby.png" />
+               </image></ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="91.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Pearl.png" />
+               </image></ImageView>
+            <ImageView fitHeight="23.0" fitWidth="49.0" layoutX="51.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Rum.png" />
+               </image></ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="6.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/PlayerIcon_Green.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label id="mainheader" layoutX="362.0" layoutY="1.0" prefHeight="54.0" prefWidth="250.0" text="ScoreBoard">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button id="button" fx:id="menuBtn" layoutX="362.0" layoutY="331.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="203.0" text="Return to game">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

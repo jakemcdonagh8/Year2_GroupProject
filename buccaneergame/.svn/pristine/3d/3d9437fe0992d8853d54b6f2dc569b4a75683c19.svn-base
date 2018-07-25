@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox id="backround" alignment="CENTER" prefHeight="440.0" prefWidth="327.0" spacing="5.0" style="-fx-background-color: #ffe680;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.game.W_FightConfirm">
+   <children>
+      <HBox id="backround1">
+         <children>
+            <Text id="backround" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you wish to attack">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <Text id="backround" fx:id="txtPName" strokeType="OUTSIDE" strokeWidth="0.0" text="PlayerName">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Text>
+            <Text id="header" strokeType="OUTSIDE" strokeWidth="0.0" text="?">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+      <VBox id="backround" alignment="BASELINE_CENTER" prefHeight="247.0" prefWidth="238.0" style="-fx-background-color: #ffe680;">
+         <children>
+            <Text id="cardtext" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Ship:">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <HBox id="backround" fx:id="hboxYour" alignment="CENTER" prefHeight="79.0" prefWidth="200.0" style="-fx-background-color: #ffe680;">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Text id="cardtext" strokeType="OUTSIDE" strokeWidth="0.0" text="Enemy Ship:">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <HBox id="backround1" fx:id="hboxEnemy" alignment="CENTER" prefHeight="79.0" prefWidth="200.0" stylesheets="@styles.css">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox id="backround" alignment="CENTER" style="-fx-background-color: #ffe680;">
+         <children>
+            <Text id="cardtext" strokeType="OUTSIDE" strokeWidth="0.0" text="Your fighting strength:" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text id="cardtext" fx:id="txtFightStr" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <VBox id="backround" alignment="CENTER" prefHeight="103.0" prefWidth="238.0" style="-fx-background-color: #ffe680;">
+         <children>
+            <Button id="button" fx:id="confirmBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="141.0" stylesheets="@styles.css" text="Attack" />
+            <Button id="button" fx:id="abortBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" stylesheets="@styles.css" text="Abort">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

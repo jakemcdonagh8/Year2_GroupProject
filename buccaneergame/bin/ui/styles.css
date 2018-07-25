@@ -1,0 +1,53 @@
+#header{
+    -fx-font: 26px "Serif";
+    -fx-font-weight: bold;
+}
+#header2{
+	-fx-font: 20px "Serif";
+	-fx-font-weight: bold;
+}
+#button{
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-text-align: center;
+    -fx-vertical-align: middle;
+    -fx-effect: dropshadow( gaussian, rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+
+#backround{
+	-fx-background-color:  #fffae6;
+}
+
+#backround1{
+	-fx-background-color: #ffe680 ;
+}
+
+#mainheader{
+	-fx-font: 48px "Serif";
+     -fx-font-weight: bold;
+	
+}
+
+#cardtext{
+	-fx-font: 15px "Serif";
+}
+
+#cardheader{
+  -fx-font: 19px "Serif";
+   -fx-font-weight: bold;
+}
+#treasure{
+	-fx-font: 12px "Serif";
+}
+#mainheader2{
+	-fx-font: 32px "Serif";
+     -fx-font-weight: bold;
+	
+}
+#myCard{
+	-fx-font: 24px "Serif";
+	-fx-font-weight: bold;
+	}
+
